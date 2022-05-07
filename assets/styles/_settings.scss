@@ -1,0 +1,35 @@
+// ***************************************** FONTS ***************************************************************
+@font-face {
+  font-family: "Allura";
+  src: url(/assets/fonts/Allura-Regular.ttf);
+}
+@font-face {
+  font-family: "Poppins";
+  src: url(/assets/fonts/Poppins-Medium.ttf);
+}
+@font-face {
+  font-family: "Roboto";
+  src: url(/assets/fonts/Roboto-Light.ttf);
+}
+
+$font-1: "Allura";
+$font-2: "Poppins";
+$font-3: "Roboto";
+
+// ***************************************** COLORS ***************************************************************
+
+$font-color-1: rgb(173, 125, 36);
+$font-color-2: white;
+$font-color-3: black;
+
+// ***************************************** MIXINS ***************************************************************
+
+
+
+// ****************************************************************************************************************
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
