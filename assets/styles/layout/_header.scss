@@ -2,7 +2,7 @@ header {
   background: url(/assets/img/bg-slider-06.jpg) center/cover;
   height: 100vh;
 
-  color: $font-color-2;
+  color: $color-2;
 
   nav {
     display: flex;
@@ -41,7 +41,7 @@ header {
         }
       }
       a {
-        color: $font-color-2;
+        color: $color-2;
         text-decoration: none;
       }
     }
@@ -67,7 +67,7 @@ header {
         family: $font-1;
       }
       top: -35px;
-      color: $font-color-1;
+      color: $color-1;
     }
 
     h1 {
