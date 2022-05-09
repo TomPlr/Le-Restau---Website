@@ -1,0 +1,151 @@
+.reservations {
+  height: 900px;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  background: $color-6;
+}
+
+.online-booking {
+  display: grid;
+  grid-template-columns: 400px 1000px;
+  margin: 0px auto;
+  padding: 100px 0px;
+  height: 900px;
+}
+
+.left-part {
+  display: flex;
+  justify-content: center;
+
+  background: $color-3;
+
+  .container {
+    width: 700px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    margin: 30px;
+    padding-top: 70px;
+    border: 1px dashed $color-2;
+    color: $color-2;
+
+    &__title {
+      position: relative;
+      font: 2.2rem $font-2;
+
+      &::before {
+        content: "Time";
+        position: absolute;
+        font: 3.5rem $font-1;
+        color: $color-1;
+        top: -45px;
+        left: 5px;
+      }
+    }
+
+    &__image {
+      height: 50px;
+      width: 50px;
+    }
+
+    &__infos {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    &__days {
+      font: 1.5rem $font-2;
+      text-transform: uppercase;
+      color: $color-1;
+      margin: 20px 0px;
+    }
+
+    &__hours {
+      font: 1.2rem $font-3;
+    }
+  }
+}
+
+.right-part {
+  background: $color-2;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  .container {
+    width: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 150px 0px 50px 0px;
+
+    &__title {
+      position: relative;
+      font: 800 2.5rem $font-2;
+
+      &::before {
+        content: "Reservation";
+        position: absolute;
+        font: 3.5rem $font-1;
+        color: $color-1;
+        top: -50px;
+        left: 50%;
+        transform: translateX(-50%);
+      }
+    }
+  }
+
+  form {
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    > div {
+      width: 800px;
+      display: grid;
+      grid-template-columns: auto auto auto;
+      gap: 50px;
+
+      :nth-child(1) {
+        display: flex;
+        justify-content: space-between;
+      }
+    }
+  }
+
+  #select {
+    width: 80px;
+    text-align: center;
+  }
+  .input-style {
+    border: none;
+    font-size: 1.2rem;
+    width: 100%;
+  }
+  .after {
+    position: relative;
+    &::after {
+      position: absolute;
+      content: "";
+      height: 1px;
+      width: 100%;
+      background: $color-5;
+      top: 40px;
+    }
+  }
+
+  .submit-btn {
+    margin-top: 100px;
+    padding: 18px 50px;
+    border-radius: 45px;
+    background: $color-6;
+    color: $color-2;
+    font: 1.3rem $font-2;
+    letter-spacing: 5px;
+    cursor: pointer;
+  }
+}

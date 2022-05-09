@@ -1,0 +1,99 @@
+#menu {
+  display: grid;
+  grid-template-rows: 430px 800px;
+
+  .bg-1 {
+    background: $color-6;
+    height: 430px;
+  }
+
+  .container {
+    height: 200px;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+
+    &__title {
+      font: 100 2.3rem $font-1;
+      color: $color-1;
+      height: 35px;
+    }
+
+    &__image {
+      margin: 40px 0;
+    }
+
+    &__list {
+      display: flex;
+      justify-content: space-between;
+      width: 800px;
+    }
+
+    &__item {
+      position: relative;
+      list-style: none;
+      color: $color-2;
+      font: 100 1.2rem $font-3;
+
+      &::after {
+        position: absolute;
+        content: "";
+        height: 1px;
+        width: 100%;
+        top: 33px;
+        left: 0;
+        background: $color-2;
+      }
+    }
+  }
+
+  .bg-2 {
+    background: url(/assets/img/bg-menu-01.jpg) center/cover;
+    position: relative;
+  }
+
+  .menu-box {
+    position: absolute;
+    top: -140px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: $color-2;
+    display: grid;
+    grid-template-columns: auto auto;
+    height: 780px;
+    width: 1050px;
+    border-top: 6px solid $color-1;
+    padding-bottom: 20px;
+
+    .card {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      border-bottom: 1px dashed $color-1;
+      margin: 10px 20px;
+
+      &__image {
+        border-radius: 50%;
+      }
+
+      &__title {
+        font: 900 1rem $font-3;
+        text-transform: uppercase;
+      }
+
+      &__description {
+        font: 1.3rem $font-3;
+        width: 230px;
+      }
+
+      &__price {
+        font: 800 1.3rem $font-3;
+        color: $color-1;
+        width: 100px;
+        text-align: right;
+      }
+    }
+  }
+}
